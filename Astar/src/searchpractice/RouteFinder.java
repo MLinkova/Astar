@@ -35,7 +35,7 @@ public class RouteFinder {
 		RobotSpecification[] modelRobots = engine.getLocalRepository("sample.SittingDuck,fnl.FnlBot*");
 		RobotSpecification[] existingRobots = new RobotSpecification[NumObstacles + 1];
 		RobotSetup[] robotSetups = new RobotSetup[NumObstacles + 1];
-		Random r = new Random();
+		Random r = new Random(5);
 		int[] x = { 1, 2, 5, 8, 3, 6, 4, 5, 7, 1, 3, 4 };
 		int[] y = { 1, 5, 4, 8, 4, 6, 1, 5, 7, 2, 3, 4 };
 		Set<Coordinates> coordinates = new HashSet<Coordinates>();
